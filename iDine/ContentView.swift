@@ -16,7 +16,9 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) {
                         ForEach(section.items) { item in
-                            ItemRow(item: item)
+                            NavigationLink(destination: ItemDetail(item: item)) {
+                                ItemRow(item: item)
+                            }
                         }
                     }
                 }
@@ -30,6 +32,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewDevice("iPhone 13 Pro")
     }
 }
