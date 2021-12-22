@@ -14,6 +14,7 @@
 		678F9CB927710769000874BC /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F9CB827710769000874BC /* ItemRow.swift */; };
 		679AFE4D2772FA7A00AC8377 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFE4C2772FA7A00AC8377 /* ItemDetail.swift */; };
 		679AFE4F27731C5600AC8377 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFE4E27731C5600AC8377 /* OrderView.swift */; };
+		679AFE5127731E3600AC8377 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFE5027731E3600AC8377 /* MainView.swift */; };
 		67DA52DC2770BB5E006F8947 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA52DB2770BB5E006F8947 /* iDineApp.swift */; };
 		67DA52DE2770BB5E006F8947 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA52DD2770BB5E006F8947 /* ContentView.swift */; };
 		67DA52E02770BB5F006F8947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DA52DF2770BB5F006F8947 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		678F9CB827710769000874BC /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		679AFE4C2772FA7A00AC8377 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		679AFE4E27731C5600AC8377 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		679AFE5027731E3600AC8377 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		67DA52D82770BB5E006F8947 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DA52DB2770BB5E006F8947 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		67DA52DD2770BB5E006F8947 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		679AFE5227731E3800AC8377 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67DA52DD2770BB5E006F8947 /* ContentView.swift */,
+				678F9CB827710769000874BC /* ItemRow.swift */,
+				679AFE4C2772FA7A00AC8377 /* ItemDetail.swift */,
+				679AFE4E27731C5600AC8377 /* OrderView.swift */,
+				679AFE5027731E3600AC8377 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		679AFE5327731E4A00AC8377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				678F9CB22770DB4E000874BC /* Menu.swift */,
+				678F9CB32770DB4E000874BC /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		679AFE542773202900AC8377 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67DA52DB2770BB5E006F8947 /* iDineApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		67DA52CF2770BB5E006F8947 = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +96,10 @@
 		67DA52DA2770BB5E006F8947 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
-				67DA52DB2770BB5E006F8947 /* iDineApp.swift */,
-				67DA52DD2770BB5E006F8947 /* ContentView.swift */,
-				678F9CB827710769000874BC /* ItemRow.swift */,
-				679AFE4C2772FA7A00AC8377 /* ItemDetail.swift */,
-				679AFE4E27731C5600AC8377 /* OrderView.swift */,
+				679AFE542773202900AC8377 /* App */,
+				679AFE5227731E3800AC8377 /* Views */,
+				679AFE5327731E4A00AC8377 /* Models */,
 				678F9CB02770DB05000874BC /* Helper.swift */,
-				678F9CB22770DB4E000874BC /* Menu.swift */,
-				678F9CB32770DB4E000874BC /* Order.swift */,
 				678F9CB62770DBCB000874BC /* menu.json */,
 				67DA52DF2770BB5F006F8947 /* Assets.xcassets */,
 				67DA52E12770BB5F006F8947 /* Preview Content */,
@@ -160,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				679AFE4D2772FA7A00AC8377 /* ItemDetail.swift in Sources */,
+				679AFE5127731E3600AC8377 /* MainView.swift in Sources */,
 				679AFE4F27731C5600AC8377 /* OrderView.swift in Sources */,
 				67DA52DE2770BB5E006F8947 /* ContentView.swift in Sources */,
 				67DA52DC2770BB5E006F8947 /* iDineApp.swift in Sources */,
