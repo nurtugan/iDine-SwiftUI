@@ -30,10 +30,16 @@ struct ItemDetail: View {
                 order.add(item: item)
             }
             .font(.headline)
+            .buttonStyle(.borderedProminent)
             Spacer()
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            Button(action: {}) {
+                Image(systemName: "star")
+            }
+        }
     }
 }
 
