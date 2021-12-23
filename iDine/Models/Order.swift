@@ -10,6 +10,7 @@ import SwiftUI
 
 final class Order: ObservableObject {
     @Published var items = [MenuItem]()
+    @Published var favoriteItems = Set<MenuItem>()
 
     var total: Int {
         if items.count > 0 {
@@ -27,5 +28,17 @@ final class Order: ObservableObject {
         if let index = items.firstIndex(of: item) {
             items.remove(at: index)
         }
+    }
+    
+    func addToFavorites(item: MenuItem) {
+        favoriteItems.insert(item)
+    }
+    
+    func removeFromFavorites(item: MenuItem) {
+        favoriteItems.remove(item)
+    }
+    
+    func isFavorite(item: MenuItem) -> Bool {
+        favoriteItems.contains(item)
     }
 }

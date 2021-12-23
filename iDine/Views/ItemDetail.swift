@@ -36,8 +36,18 @@ struct ItemDetail: View {
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            Button(action: {}) {
-                Image(systemName: "star")
+            Button(action: {
+                if order.isFavorite(item: item) {
+                    order.removeFromFavorites(item: item)
+                } else {
+                    order.addToFavorites(item: item)
+                }
+            }) {
+                if order.isFavorite(item: item) {
+                    Image(systemName: "star.fill")
+                } else {
+                    Image(systemName: "star")
+                }
             }
         }
     }

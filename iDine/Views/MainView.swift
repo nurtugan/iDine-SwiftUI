@@ -18,6 +18,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
                 }
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
+                }
         }
     }
 }
